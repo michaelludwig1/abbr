@@ -1,0 +1,7 @@
+
+# The following is for the abbr program
+alias abbr="source abbr"
+if [ -f ~/.config/abbr/aliases ]; then
+    . ~/.config/abbr/aliases
+fi
+
