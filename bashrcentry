@@ -1,6 +1,6 @@
 
 # The following is for the abbr program
-alias abbr="source abbr.sh"
+alias abbr="source ~/.local/bin/abbr.sh"
 if [ -f ~/.config/abbr/aliases ]; then
     . ~/.config/abbr/aliases
 fi
