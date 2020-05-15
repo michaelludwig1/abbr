@@ -1,2 +1,3 @@
 # abbr
-Simple command line tool for managing aliases
+Simple command line tool for managing abbreviations, i.e. aliases, for bash.
+
