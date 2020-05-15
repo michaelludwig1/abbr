@@ -216,19 +216,11 @@ func writeEntryToFile(filePath string, unaliasFlag bool, alias string, command s
 }
 
 func getAbsoluteFilePath() string {
-	homeFolder, err := os.UserHomeDir()
-	if err != nil {
-		log.Fatalln(err)
-	}
-	return homeFolder + "/" + aliasPath + aliasFile
+	return os.Getenv("HOME") + "/" + aliasPath + aliasFile
 }
 
 func getAbsoluteTmpFilePath() string {
-	homeFolder, err := os.UserHomeDir()
-	if err != nil {
-		log.Fatalln(err)
-	}
-	return homeFolder + "/" + aliasPath + aliasTmpFile
+	return os.Getenv("HOME") + "/" + aliasPath + aliasTmpFile
 }
 
 func checkAliasNameValid(alias string) bool {
