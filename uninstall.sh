@@ -17,7 +17,5 @@ if ! test -z "$startLine"; then
     sed -i "${startLine},${endLine}d" ~/.bashrc
 fi
 
-# todo: delete bashrc entry
-
 . ~/.bashrc
 
